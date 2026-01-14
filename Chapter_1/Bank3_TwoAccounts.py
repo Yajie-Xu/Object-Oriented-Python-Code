@@ -8,7 +8,7 @@ account0Password = ''
 account1Name = ''
 account1Balance = 0
 account1Password = ''
-nAccounts = 0
+nAccounts = 0 # initial number of accounts
 
 def newAccount(accountNumber, name, balance, password):
     global account0Name, account0Balance, account0Password

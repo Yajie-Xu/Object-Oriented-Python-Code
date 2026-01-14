@@ -2,17 +2,17 @@
 # Version 5
 # Any number of accounts - with a list of dictionaries
 
-accountsList = []
+accountsList = [] # list to hold all account dictionaries
 
 def newAccount(aName, aBalance, aPassword):
     global accountsList
     newAccountDict = {'name':aName, 'balance':aBalance, 'password':aPassword}
     accountsList.append(newAccountDict)
    
-def show(accountNumber):
+def show(accountNumber): # accountNumber is the index in the accountsLists
     global accountsList
     print('Account', accountNumber)
-    thisAccountDict = accountsList[accountNumber]
+    thisAccountDict = accountsList[accountNumber] # get the dictionary for this account
     print('       Name', thisAccountDict['name'])
     print('       Balance:', thisAccountDict['balance'])
     print('       Password:', thisAccountDict['password'])

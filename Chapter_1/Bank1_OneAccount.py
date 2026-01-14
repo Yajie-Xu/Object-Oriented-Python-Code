@@ -1,14 +1,17 @@
 # Non-OOP
 # Bank Version 1
-# Single account
+# Single account 
+# Procedural code + No functino calls 
+# (no structuring, hard to update and debug, not scalable for the developing process)
 
 accountName = 'Joe'
 accountBalance = 100
-accountPassword = 'soup'
+accountPassword = 'soup' # you should never store passwords like this!
 
-while True:
+# simple, only one while loop
+while True: 
     print()
-    print('Press b to get the balance')
+    print('Press b to get the balance') # hard to pin-point the bug
     print('Press d to make a deposit')
     print('Press w to make a withdrawal')
     print('Press s to show the account')
@@ -16,6 +19,7 @@ while True:
     print()
 
     action = input('What do you want to do? ')
+    # input checking
     action = action.lower()  # force lowercase
     action = action[0]  # just use first letter
     print()
