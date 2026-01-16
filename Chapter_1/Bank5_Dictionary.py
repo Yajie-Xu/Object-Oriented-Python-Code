@@ -13,7 +13,7 @@ def show(accountNumber): # accountNumber is the index in the accountsLists
     global accountsList
     print('Account', accountNumber)
     thisAccountDict = accountsList[accountNumber] # get the dictionary for this account
-    print('       Name', thisAccountDict['name'])
+    print('       Name', thisAccountDict['name']) # access dictionary entry by key
     print('       Balance:', thisAccountDict['balance'])
     print('       Password:', thisAccountDict['password'])
     print()

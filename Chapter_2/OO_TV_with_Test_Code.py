@@ -1,8 +1,8 @@
 # TV class with test code
 
-class TV():
+class TV(): # not necssarily the same as the filename
     def __init__(self):
-        self.isOn = False
+        self.isOn = False # if without self., it would be a local variable
         self.isMuted = False
         # Some default list of channels
         self.channelList = [2, 4, 5, 7, 9, 11, 20, 36, 44, 54, 65]  

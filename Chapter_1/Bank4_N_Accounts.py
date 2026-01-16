@@ -2,12 +2,13 @@
 # Version 4
 # Any number of accounts - with lists
 
-accountNamesList = []
+# drawbacks: indexing, exlore each list to find the seperated information
+accountNamesList = [] # good practice to signal type in variable name!
 accountBalancesList = []
-accountPasswordsList = []
+accountPasswordsList = [] # hard code - insecure
 
 def newAccount(name, balance, password):
-    global accountNamesList, accountBalancesList, accountPasswordsList
+    global accountNamesList, accountBalancesList, accountPasswordsList # in every function can modify the global lists
     accountNamesList.append(name)
     accountBalancesList.append(balance)
     accountPasswordsList.append(password)
@@ -75,14 +76,14 @@ while True:
     print()
 
     action = input('What do you want to do? ')
-    action = action.lower()  # force lowercase
+    action = action.lower()  # force lowercase (generate an array)
     action = action[0]  # just use first letter
     print()
     
     if action == 'b':
         print('Get Balance:')
-        userAccountNumber = input('Please enter your account number: ')
-        userAccountNumber = int(userAccountNumber)
+        userAccountNumber = input('Please enter your account number: ') # string
+        userAccountNumber = int(userAccountNumber)  # integer
         userPassword = input('Please enter the password: ')
         theBalance = getBalance(userAccountNumber, userPassword)
         if theBalance is not None:

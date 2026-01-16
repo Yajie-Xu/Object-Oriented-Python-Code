@@ -24,7 +24,7 @@ class DimmerSwitch():
         print('Switch is on?', self.switchIsOn)
         print('Brightness is:', self.brightness)
 
-# Main code
+# Main code (can be in a separate file)
 oDimmer = DimmerSwitch() 
 
 # Turn switch on, and raise the level 5 times

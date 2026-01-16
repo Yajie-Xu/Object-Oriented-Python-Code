@@ -1,6 +1,7 @@
 # Non-OOP
 # Bank 2
 # Single account
+# Procedural code + function calls
 
 accountName = ''
 accountBalance = 0

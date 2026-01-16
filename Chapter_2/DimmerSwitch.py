@@ -1,7 +1,7 @@
 # DimmerSwitch class
 
 class DimmerSwitch():
-    def __init__(self):
+    def __init__(self): # setup
         self.switchIsOn = False
         self.brightness = 0
         
