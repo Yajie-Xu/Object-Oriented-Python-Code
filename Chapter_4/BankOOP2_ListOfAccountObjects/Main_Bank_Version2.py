@@ -8,7 +8,7 @@ from Account import *
 accountsList = [ ]  
 
 # Create two accounts
-oAccount = Account('Joe', 100, 'JoesPassword')
+oAccount = Account('Joe', 100, 'JoesPassword') # ! Use the same object name each time, since we are storing in a list
 accountsList.append(oAccount)
 print("Joe's account number is 0")
 
@@ -16,7 +16,7 @@ oAccount = Account('Mary', 12345, 'MarysPassword')
 accountsList.append(oAccount)
 print("Mary's account number is 1")
 
-accountsList[0].show()
+accountsList[0].show() # reference by index
 accountsList[1].show()
 print()
 

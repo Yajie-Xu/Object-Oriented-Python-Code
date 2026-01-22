@@ -4,8 +4,8 @@
 # Bring in all the code from the Account class file
 from Account import *
 
-accountsDict = {}
-nextAccountNumber = 0
+accountsDict = {} # global dictionary to hold accounts
+nextAccountNumber = 0 # Key
 
 # Create two accounts:
 oAccount = Account('Joe', 100, 'JoesPassword')
