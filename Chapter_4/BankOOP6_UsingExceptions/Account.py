@@ -9,7 +9,7 @@ class AbortTransaction(Exception):
 class Account():
     def __init__(self, name, balance, password):
         self.name = name
-        self.balance = self.validateAmount(balance)
+        self.balance = self.validateAmount(balance) # validation (different from prior versions)
         self.password = password
 
     def validateAmount(self, amount):
@@ -18,7 +18,7 @@ class Account():
         except ValueError:
             raise AbortTransaction('Amount must be an integer')
         if amount <= 0:
-            raise AbortTransaction('Amount must be positive')
+            raise AbortTransaction('Amount must be positive') # same exception but different description
         return amount
 
     def checkPasswordMatch(self, password):

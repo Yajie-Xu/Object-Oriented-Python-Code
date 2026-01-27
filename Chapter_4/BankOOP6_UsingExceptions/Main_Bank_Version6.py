@@ -39,8 +39,8 @@ while True:
             oBank.show()
         elif action == 'w':
             oBank.withdraw()
-    except AbortTransaction as error:
+    except AbortTransaction as o_error: # exception is an instance (object) of AbortTransaction
         # Print out the text of the error message
-        print(error)
+        print(o_error)
         
 print('Done')

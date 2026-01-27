@@ -9,7 +9,7 @@ class Bank():
         self.nextAccountNumber = 0
 
     def createAccount(self, theName, theStartingAmount, thePassword):
-        oAccount = Account(theName, theStartingAmount, thePassword)
+        oAccount = Account(theName, theStartingAmount, thePassword) # nested object
         newAccountNumber = self.nextAccountNumber
         self.accountsDict[newAccountNumber] = oAccount
         # Increment to prepare for next account to be created
