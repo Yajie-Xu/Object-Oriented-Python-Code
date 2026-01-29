@@ -20,9 +20,10 @@ clock = pygame.time.Clock()
  
 # 4 - Load assets: image(s), sound(s),  etc.
 ballImage = pygame.image.load('images/ball.png')
-bounceSound = pygame.mixer.Sound('sounds/boing.wav')
+bounceSound = pygame.mixer.Sound('sounds/boing.wav') # load a sound effect
+# load and play background music (looping forever)
 pygame.mixer.music.load('sounds/background.mp3')
-pygame.mixer.music.play(-1, 0.0)
+pygame.mixer.music.play(-1, 0.0) # `-1` means loop forever; `0.0` means start at beginning
 
 
 # 5 - Initialize variables
@@ -48,7 +49,7 @@ while True:
     # 8 - Do any "per frame" actions
     if (ballRect.left < 0) or (ballRect.right >= WINDOW_WIDTH):
         xSpeed = -xSpeed  # reverse X direction
-        bounceSound.play()
+        bounceSound.play() # play the bounce sound effect
 
     if (ballRect.top < 0) or (ballRect.bottom >= WINDOW_HEIGHT):
         ySpeed = -ySpeed  # reverse Y direction

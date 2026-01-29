@@ -22,7 +22,7 @@ clock = pygame.time.Clock()
 ballImage = pygame.image.load('images/ball.png')
 
 # 5 - Initialize variables
-ballRect = ballImage.get_rect()
+ballRect = ballImage.get_rect() # create a rect based on the image size
 MAX_WIDTH = WINDOW_WIDTH - ballRect.width
 MAX_HEIGHT = WINDOW_HEIGHT - ballRect.height
 ballRect.left = random.randrange(MAX_WIDTH)

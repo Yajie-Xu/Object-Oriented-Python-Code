@@ -27,7 +27,7 @@ MAX_WIDTH = WINDOW_WIDTH - BALL_WIDTH_HEIGHT
 MAX_HEIGHT = WINDOW_HEIGHT - BALL_WIDTH_HEIGHT
 ballX = random.randrange(MAX_WIDTH)
 ballY = random.randrange(MAX_HEIGHT)
-xSpeed = N_PIXELS_PER_FRAME
+xSpeed = N_PIXELS_PER_FRAME # initial speed in X direction
 ySpeed = N_PIXELS_PER_FRAME
  
 # 6 - Loop forever

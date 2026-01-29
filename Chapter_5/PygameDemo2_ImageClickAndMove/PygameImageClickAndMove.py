@@ -12,7 +12,7 @@ WINDOW_WIDTH = 640
 WINDOW_HEIGHT = 480
 FRAMES_PER_SECOND = 30
 BALL_WIDTH_HEIGHT = 100
-MAX_WIDTH = WINDOW_WIDTH - BALL_WIDTH_HEIGHT
+MAX_WIDTH = WINDOW_WIDTH - BALL_WIDTH_HEIGHT # to keep ball on screen
 MAX_HEIGHT = WINDOW_HEIGHT - BALL_WIDTH_HEIGHT
 
 # 3 - Initialize the world
@@ -26,7 +26,7 @@ ballImage = pygame.image.load('images/ball.png')
 # 5 - Initialize variables
 ballX = random.randrange(MAX_WIDTH)
 ballY = random.randrange(MAX_HEIGHT)
-ballRect = pygame.Rect(ballX, ballY, BALL_WIDTH_HEIGHT, BALL_WIDTH_HEIGHT)
+ballRect = pygame.Rect(ballX, ballY, BALL_WIDTH_HEIGHT, BALL_WIDTH_HEIGHT) # bounding rect for the ball
  
 # 6 - Loop forever
 while True:
